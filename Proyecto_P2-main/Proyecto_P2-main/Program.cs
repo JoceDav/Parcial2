@@ -9,14 +9,16 @@ namespace persona_herencia
     //08.05.2024
     //Este esun programa que funciona para que una persona proporcione sus datos en una "base de datos"
     //PRIMER INTENTO :C
+    //09.05.24
+    //Segundo intento
     class Persona //clase padre
     {
         //atributos
         //Se usa Protected para limitar el acceso a un determinado miembro
-        protected string Nombre;
-        protected string FechaNacimiento;                 
-        protected int Edad;                     
-       
+        protected string Nombre; //CAJA QUE GUARDA NOMBRE
+        protected string FechaNacimiento;//CAJA QUE GUARDA FECHA DE NACIMIENTO              
+        protected int Edad; //CAJA QUE GUARDA EDAD         
+
         //Tipo de dato String.      Tipo de acceso: Public
         public string nombre//Caja de memoria
         {
@@ -44,7 +46,7 @@ namespace persona_herencia
 class Alumno :Persona //clase hija alumno
     //Los : hacen que se establezca una relacion de herencia entre las clases Alumno y persona
     {
-    protected string Matricula;
+    protected string Matricula; //CAJA QUE GUARDA MATRICULA
     //Tipo de dato String.      Tipo de acceso: Public
     public string Matricula
     {
@@ -52,7 +54,6 @@ class Alumno :Persona //clase hija alumno
         get { return Matricula; }
         set { Matricula = value; }
     }
-    //Tipo de dato String.      Tipo de acceso: Public
     //Modifica y accede a la carrera.
     public string Carrera
     {
@@ -61,28 +62,28 @@ class Alumno :Persona //clase hija alumno
     }
 
 }
-class Empleado :persona //clase hija
+class Empleado :Persona:Docente //clase hija
 //Los : hacen que se establezca una relacion de herencia entre las clases Alumno y persona
 
 {
-    protected int Sueldo;
-    //Se usa Protected para limitar el acceso a un determinado miembro
-    protected int Sueldo;
+    protected int Sueldo; //CAJA QUE GUARDA SUELDO
+//Se usa Protected para limitar el acceso a un determinado miembro
+protected int Sueldo;
     //Tipo de dato Int.      Tipo de acceso: Public
     public int sueldo
     {
         get { return Sueldo; }
         set { Sueldo = value; }
     }
-    protected string DNI
+    protected string DNI //CAJA QUE GUARDA DNI
     // Propiedad para el DNI
     //Tipo de dato string.      Tipo de acceso: Public
-    public string DNI
+    public string dni
     {
         get { return DNI; }
         set { DNI = value; }
     }
-    protected string Puesto
+    protected string Puesto //CAJA QUE GUARDA PUESTO
     // Propiedad para el puesto
     //Tipo de dato string      Tipo de acceso: Public
     public string Puesto
@@ -96,21 +97,21 @@ class Docente :Persona //clase Hija
    //Los : hacen que se establezca una relacion de herencia entre las clases Alumno y persona
 {
     //Se usa Protected para limitar el acceso a un determinado miembro
-    protected int Sueldo;
+    protected int Sueldo;//CAJA QUE GUARDA SUELDO
     //Tipo de dato int       Tipo de acceso: Public
     public int sueldo
     {
         get { return Sueldo; }
         set { Sueldo = value; }
     }
-    protected string DNI;
+    protected string DNI;//CAJA QUE GUARDA DNI
     //Tipo de dato string      Tipo de acceso: Public
     public string DNI
     {
         get { return DNI; }
         set { DNI = value; }
     }
-    protected string Puesto;
+    protected string Puesto;//CAJA QUE GUARDA PUESTO
     //Tipo de dato string      Tipo de acceso: Public
     public string Puesto
     {
