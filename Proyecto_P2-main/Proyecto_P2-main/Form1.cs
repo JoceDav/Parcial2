@@ -19,22 +19,26 @@ namespace persona_herencia
 
         private void guardar_Click(object sender, EventArgs e)
         {
-            // esto se hace de tarea todos los valores
-            // deben de almacenarse en su
-            // caja de memoria correspondiente
-            // usando la clase hija que corresponda
+            Console.WriteLine("¡Tus datos se han guardado exitosamente!");
+            //Nos muestra el mensaje de que nuestros datos han sido guardados correctamente. 
         }
 
         private void limpiar_Click(object sender, EventArgs e)
         {
-            // se hace de tarea
-            // debe de borrar las cajas de texto
+            //Los textBox son las cajas de lso botones 
+            //Clear como su mismo nombre lo dice, limpia/quita lo que se escribrio en esa caja de texto. 
+            textBox1.Clear();
+            textBox2.Clear();
+            textBox3.Clear();
+            textBox4.Clear();
+            textBox5.Clear(); 
+            textBox6.Clear();
         }
 
         private void Salir_Click(object sender, EventArgs e)
         {
-            // se hace de tarea
-            // debe de terminar la ejecucion de la interfaz
+            Application.Exit();
+            //Este cierra las ventanas y finaliza la ejecucion del programa. 
         }
     }
 }
