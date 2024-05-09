@@ -13,24 +13,23 @@ namespace persona_herencia
     {
         //atributos
         //Se usa Protected para limitar el acceso a un determinado miembro
-        protected string NombreCompleto;
-        protected string FechaN;                 
+        protected string Nombre;
+        protected string FechaNacimiento;                 
         protected int Edad;                     
-        protected int DNIMatricula;
-        protected string CarreraPuesto;
+       
         //Tipo de dato String.      Tipo de acceso: Public
-        public string nombrecompleto //Caja de memoria
+        public string nombre//Caja de memoria
         {
-            get { return NombreCompleto; }
+            get { return Nombre; }
             //al usar return nos regresa la respuesta donde lo necesitamos imprimir
-            set { NombreCompleto = value; } //se escribe el nombre completo de la persona a registrar
+            set { Nombre = value; } //se escribe el nombre completo de la persona a registrar
         }
         //Tipo de dato String.      Tipo de acceso: Public
-        public string fechan 
+        public string fechanacimiento
         {
             //Modifica y accede la fecha de nacimiento.
-            get { return FechaN; } 
-            set { FechaN = value; }
+            get { return FechaNacimiento; } 
+            set { FechaNacimiento = value; }
         }
         //Tipo de dato Int.      Tipo de acceso: Public
         public int edad 
@@ -39,27 +38,13 @@ namespace persona_herencia
             get { return Edad; }
             set { Edad = value; }
         }
-        //Tipo de dato Int.      Tipo de acceso: Public
-        public int dnimatricula  
-        {
-            //Modifica y accede al DNI y/o  matricula.
-            get { return DNIMatricula; }
-            set { DNIMatricula = value; }
-        }
-        //Tipo de dato String.      Tipo de acceso: Public
-        public string carreraPuesto
-        {
-            //Modifica y accede a la carrera / puesto.
-
-            get { return CarreraPuesto; }
-            set { CarreraPuesto = value; }
-        }
     }
 }
 
 class Alumno :Persona //clase hija alumno
     //Los : hacen que se establezca una relacion de herencia entre las clases Alumno y persona
     {
+    protected string Matricula;
     //Tipo de dato String.      Tipo de acceso: Public
     public string Matricula
     {
@@ -80,6 +65,7 @@ class Empleado :persona //clase hija
 //Los : hacen que se establezca una relacion de herencia entre las clases Alumno y persona
 
 {
+    protected int Sueldo;
     //Se usa Protected para limitar el acceso a un determinado miembro
     protected int Sueldo;
     //Tipo de dato Int.      Tipo de acceso: Public
@@ -88,6 +74,7 @@ class Empleado :persona //clase hija
         get { return Sueldo; }
         set { Sueldo = value; }
     }
+    protected string DNI
     // Propiedad para el DNI
     //Tipo de dato string.      Tipo de acceso: Public
     public string DNI
@@ -95,7 +82,7 @@ class Empleado :persona //clase hija
         get { return DNI; }
         set { DNI = value; }
     }
-
+    protected string Puesto
     // Propiedad para el puesto
     //Tipo de dato string      Tipo de acceso: Public
     public string Puesto
@@ -116,12 +103,14 @@ class Docente :Persona //clase Hija
         get { return Sueldo; }
         set { Sueldo = value; }
     }
+    protected string DNI;
     //Tipo de dato string      Tipo de acceso: Public
     public string DNI
     {
         get { return DNI; }
         set { DNI = value; }
     }
+    protected string Puesto;
     //Tipo de dato string      Tipo de acceso: Public
     public string Puesto
     {
