@@ -15,9 +15,9 @@ namespace persona_herencia
     {
         //atributos
         //Se usa Protected para limitar el acceso a un determinado miembro
+        protected int Edad; //CAJA QUE GUARDA EDAD
         protected string Nombre; //CAJA QUE GUARDA NOMBRE
         protected string FechaNacimiento;//CAJA QUE GUARDA FECHA DE NACIMIENTO              
-        protected int Edad; //CAJA QUE GUARDA EDAD         
 
         //Tipo de dato String.      Tipo de acceso: Public
         public string nombre//Caja de memoria
@@ -62,7 +62,7 @@ class Alumno :Persona //clase hija alumno
     }
 
 }
-class Empleado :Persona:Docente //clase hija
+class Empleado :Persona: //clase hija
 //Los : hacen que se establezca una relacion de herencia entre las clases Alumno y persona
 
 {
@@ -93,7 +93,7 @@ protected int Sueldo;
     }
 }
 
-class Docente :Persona //clase Hija
+class Docente :Empleado //clase Hija
    //Los : hacen que se establezca una relacion de herencia entre las clases Alumno y persona
 {
     //Se usa Protected para limitar el acceso a un determinado miembro
