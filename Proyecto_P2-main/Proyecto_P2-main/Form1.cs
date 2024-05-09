@@ -19,7 +19,7 @@ namespace persona_herencia
 
         private void guardar_Click(object sender, EventArgs e)
         {
-            Console.WriteLine("¡Tus datos se han guardado exitosamente!");
+            MessageBox.Show("¡Tus datos se han guardado exitosamente!");
             //Nos muestra el mensaje de que nuestros datos han sido guardados correctamente. 
         }
 

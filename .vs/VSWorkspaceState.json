@@ -1,6 +1,15 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Proyecto_P2-main",
+    "\\Proyecto_P2-main\\Proyecto_P2-main",
+    "\\Proyecto_P2-main\\Proyecto_P2-main\\bin",
+    "\\Proyecto_P2-main\\Proyecto_P2-main\\bin\\Debug",
+    "\\Proyecto_P2-main\\Proyecto_P2-main\\bin\\Release",
+    "\\Proyecto_P2-main\\Proyecto_P2-main\\obj",
+    "\\Proyecto_P2-main\\Proyecto_P2-main\\obj\\Debug",
+    "\\Proyecto_P2-main\\Proyecto_P2-main\\obj\\Release"
   ],
+  "SelectedNode": "\\Proyecto_P2-main\\Proyecto_P2-main\\Form1.cs",
   "PreviewInSolutionExplorer": false
 }
